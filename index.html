@@ -3,45 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcards with Spaced Repetition</title>
+    <title>Flashcard App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Flashcard Study</h1>
-    
     <div id="flashcard">
-        <div class="front" id="question"></div>
-        <div class="back" id="answer"></div>
+        <div id="question"></div>
+        <div id="answer" style="display:none;"></div>
     </div>
 
     <div class="controls">
         <button id="showAnswer">Show Answer</button>
-        <button id="correct">I knew it</button>
+        <button id="correct">I knew it!</button>
         <button id="wrong">I forgot</button>
     </div>
 
+    <h2>Create Your Own Flashcard</h2>
+    <form id="flashcardForm">
+        <input type="text" id="newQuestion" placeholder="Enter question" required>
+        <input type="text" id="newAnswer" placeholder="Enter answer" required>
+        <button type="submit">Add Flashcard</button>
+    </form>
+
     <script src="script.js"></script>
-
-
-    <!-- Existing flashcard HTML -->
-<div id="flashcard">
-    <div id="question"></div>
-    <div id="answer" style="display:none;"></div>
-</div>
-
-<div class="controls">
-    <button id="showAnswer">Show Answer</button>
-    <button id="correct">I knew it!</button>
-    <button id="wrong">I forgot</button>
-</div>
-
-<!-- New flashcard creation form -->
-<h2>Create Your Own Flashcard</h2>
-<form id="flashcardForm">
-    <input type="text" id="newQuestion" placeholder="Enter question" required>
-    <input type="text" id="newAnswer" placeholder="Enter answer" required>
-    <button type="submit">Add Flashcard</button>
-</form>
-
 </body>
 </html>
