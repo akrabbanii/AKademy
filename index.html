@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Simple Website</title>
-        <link rel="stylesheet" href="styles.css">
+    <title>Flashcards with Spaced Repetition</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple website hosted on GitHub Pages.</p>
-    <footer>
-        <p>&copy; 2024 My Website</p>
-    </footer>
+    <h1>Flashcard Study</h1>
+    
+    <div id="flashcard">
+        <div class="front" id="question"></div>
+        <div class="back" id="answer"></div>
+    </div>
+
+    <div class="controls">
+        <button id="showAnswer">Show Answer</button>
+        <button id="correct">I knew it</button>
+        <button id="wrong">I forgot</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
