@@ -73,3 +73,25 @@ button#wrong {
 button:hover {
     opacity: 0.8;
 }
+
+
+
+/* Styling for the form used to create new flashcards */
+form#flashcardForm {
+    margin-top: 20px;
+}
+
+form#flashcardForm input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+form#flashcardForm button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
