@@ -10,11 +10,18 @@
     <div id="app">
         <div class="flashcard-container">
             <div class="flashcard">
+                <!-- Question displayed here -->
                 <div class="question">What is JavaScript?</div>
+                <!-- Answer initially hidden -->
                 <div class="answer">JavaScript is a programming language commonly used in web development.</div>
-                <button class="toggle-answer">Show Answer</button>
+                <!-- Button to toggle visibility of the answer -->
+                <button class="toggle-answer" aria-label="Show answer">Reveal <span class="eye-icon">👁️</span></button>
             </div>
         </div>
+        <!-- Buttons for marking the answer as correct or incorrect -->
+        <button id="correct" class="result-button" aria-label="Mark as correct">Correct ✅</button>
+        <button id="incorrect" class="result-button" aria-label="Mark as incorrect">Incorrect ❌</button>
+        <!-- Button to go to the next flashcard -->
         <button id="next-card">Next Card</button>
     </div>
     <script src="script.js"></script>
